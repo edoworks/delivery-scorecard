@@ -42,12 +42,12 @@
       "id": "couch-clash",
       "name": "Couch Clash",
       "workingName": true,
-      "stage": "prototype",
-      "status": "Browser and iOS simulator flows verified",
-      "statusObservedAt": null,
+      "stage": "public",
+      "status": "Public web live · internal beta available",
+      "statusObservedAt": "2026-10-04",
       "testDate": "2026-10-04",
       "intended": "Deliver a usable shared game experience through public web and native TestFlight distribution.",
-      "delivered": "Local browser and native iOS simulator flows passed, including complete games, persistence, reset, installed icon and external-link handling. An unsigned device archive is prepared. Public web publication and TestFlight distribution remain blocked; no release occurred.",
+      "delivered": "Public web delivery is verified and TestFlight 0.1.0 (1) is available as an internal beta. Deployed mobile, offline and saved-pick checks passed. Physical-device installation and real-world enjoyment remain unverified.",
       "unitTestsPassed": null,
       "elapsedSeconds": null,
       "elapsedStart": null,
@@ -58,27 +58,34 @@
         "Mobile layout and keyboard checks passed",
         "Localhost offline reload passed",
         "Local browser and native iOS simulator flows passed: complete games, persistence and reset",
-        "Installed icon and external-link handling passed"
+        "Installed icon and external-link handling passed",
+        "Deployed public web mobile, offline and saved-pick checks passed"
       ],
       "limitations": [
-        "Public web publication blocked; no release occurred",
-        "TestFlight distribution blocked; no release occurred",
-        "Unsigned device archive prepared; not a distributed release",
-        "Physical iPhone validation unverified",
+        "Physical-device installation unverified",
         "Real-world enjoyment unverified",
+        "Internal beta availability does not establish external beta or App Store approval",
         "No automatic live feed",
         "No synchronized multiplayer",
         "No user trial; comprehension remains unverified",
-        "Offline reload verified on localhost only; LAN HTTP offline reload unsupported"
+        "Deployed web offline checks passed; physical-device offline behavior remains unverified"
       ],
-      "blockers": [
-        "publication authorization pending",
-        "distribution setup pending"
-      ],
+      "blockers": [],
       "rework": "Clarified early calls as first-half only and exposed first-half outcomes and standings before halftime picks. Rework duration and total count are unknown.",
       "scopeChange": null,
       "hypothesis": "Clearer setup and visible results may reduce host explanation and make shared play easier; technical passes do not prove this.",
-      "action": "Resolve publication authorization and distribution setup, then verify delivery on a physical iPhone and observe real-world setup, comprehension and enjoyment. Separate observed behavior from participant feedback."
+      "action": "Verify installation and behavior on a physical iPhone, then observe real-world setup, comprehension and enjoyment. Separate observed behavior from participant feedback.",
+      "internalBetaAvailable": true,
+      "publicLinks": [
+        {
+          "label": "Open public web app",
+          "url": "https://edoworks.com/couch-clash/"
+        },
+        {
+          "label": "View public repository",
+          "url": "https://github.com/edoworks/couch-clash"
+        }
+      ]
     }
   ],
   "history": [
@@ -91,6 +98,16 @@
       "date": "2026-10-04",
       "type": "Couch Clash milestone update",
       "description": "Recorded verified local browser and native iOS simulator flows, including complete games, persistence, reset, installed icon and external-link handling. Unsigned device archive prepared. Public web publication and TestFlight distribution remain blocked; no release occurred. Blocker categories: publication authorization pending; distribution setup pending. Physical iPhone and real-world enjoyment remain unverified. Milestone recorded on this date; exact test timestamps and elapsed time remain unknown."
+    },
+    {
+      "date": "2026-10-04",
+      "type": "Couch Clash publication blocker resolved",
+      "description": "Public web and public repository verified. Deployed mobile, offline and saved-pick checks passed. Resolved: publication authorization pending. This dated update supersedes the earlier no-release status for web delivery."
+    },
+    {
+      "date": "2026-10-04",
+      "type": "Couch Clash distribution blocker resolved",
+      "description": "TestFlight 0.1.0 (1) reported available as an internal beta. Resolved: distribution setup pending. This does not establish external beta or App Store approval. Physical-device installation and real-world enjoyment remain unverified. Exact delivery timestamps and elapsed time remain unknown."
     }
   ]
 }
